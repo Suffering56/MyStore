@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <f:loadBundle basename="properties.index" var="pIndex"/>
+    <h:head>
+        <title>
+            <ui:insert name="pageTitle"/>
+        </title>
+        <h:outputStylesheet library="css" name="styles.css"/>
+    </h:head>
+    <h:body> 
+
+        <div id="heading">
+            <ui:insert name="heading">
+                <!-- значение по умолчанию -->
+                <ui:include src="/modules/header.xhtml"/>
+            </ui:insert>
+        </div>
+
+        <div id="sidebarLeft">
+            <ui:insert name="sidebarLeft">
+                <!-- значение по умолчанию -->
+                <ui:include src="/modules/sidebarLeft.xhtml"/>
+            </ui:insert>
+        </div>    
+
+        <div id="content">
+            <ui:insert name="content"/>
+        </div>
+
+        <div id="footing">
+            <ui:insert name="footing">
+                <!-- значение по умолчанию -->
+                <ui:include src="/modules/footer.xhtml"/>
+            </ui:insert>
+        </div>
+        Debug: <br/> <ui:debug/>
+    </h:body>
+</html>
