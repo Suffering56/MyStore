@@ -14,7 +14,7 @@ public class UsersManager {
     @PersistenceContext(unitName = "MyStore-ejbPU")
     private EntityManager manager;
 
-    public List<Users> getData() {
+    public List<Users> getUsers() {
         return manager.createNamedQuery("Users.findAll").getResultList();
     }
 }

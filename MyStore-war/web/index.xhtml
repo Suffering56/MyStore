@@ -2,44 +2,21 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:f="http://xmlns.jcp.org/jsf/core">
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+    <f:loadBundle basename="properties.index" var="pIndex"/>
     <h:head>
-        <title>Facelet Title</title>
+        <title>#{pIndex.title}</title>
     </h:head>
     <h:body>
-        MyStore 01;
-        <f:view>
-            <h:form>
-                <h1><h:outputText value="List"/></h1>
-                <h:dataTable value="#{index.usersList}" var="item">
-                    <h:column>
-                        <f:facet name="header">
-                            <h:outputText value="UserID"/>
-                        </f:facet>
-                        <h:outputText value="#{item.userID}"/>
-                    </h:column>
-                    <h:column>
-                        <f:facet name="header">
-                            <h:outputText value="UserName"/>
-                        </f:facet>
-                        <h:outputText value="#{item.userName}"/>
-                    </h:column>
-                    <h:column>
-                        <f:facet name="header">
-                            <h:outputText value="UserPass"/>
-                        </f:facet>
-                        <h:outputText value="#{item.userPass}"/>
-                    </h:column>
-                    <h:column>
-                        <f:facet name="header">
-                            <h:outputText value="UserRole"/>
-                        </f:facet>
-                        <h:outputText value="#{item.userRole}"/>
-                    </h:column>
-                </h:dataTable>
-            </h:form>
-        </f:view>
-
+        <h:form>
+            <h:commandButton value="CommandButton" action="catalog">
+                <f:param name="item" value="100"/>
+            </h:commandButton>
+            <h:button value="Button" outcome="catalog" >
+                <f:param name="item" value="100"/>
+            </h:button>
+        </h:form>
     </h:body>
 </html>
 

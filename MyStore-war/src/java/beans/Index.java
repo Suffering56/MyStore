@@ -13,11 +13,11 @@ public class Index {
 
     public List<Users> getUsersList() {
         if (usersList == null) {
-            usersList = usersManager.getData();
+            usersList = usersManager.getUsers();
         }
         return usersList;
     }
-    
+
     @EJB
     private UsersManager usersManager;
     private List<Users> usersList;
