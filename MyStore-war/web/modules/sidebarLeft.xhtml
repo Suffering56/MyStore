@@ -2,21 +2,38 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml"
       xmlns:h="http://xmlns.jcp.org/jsf/html"
-      xmlns:ui="http://xmlns.jcp.org/jsf/facelets">
+      xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
     <head>
         <title>IGNORED</title>
     </head>
     <body>
         <ui:composition>    
-            <h:form>
-                First <br/><br/>
-                Second <br/><br/>
-                Third <br/><br/>
-                Fourth <br/><br/>
-                Fifth <br/><br/>
-                Sixth <br/><br/>
-                Seventh <br/><br/>
-            </h:form>	    
+            <div class="sidebar">
+                <h:form>
+                    <h:link value ="First" outcome ="category">
+                        <f:param name ="category" value ="first"/>
+                    </h:link> <br/><br/>
+                    <h:link value ="Second" outcome ="category">
+                        <f:param name ="category" value ="second"/>
+                    </h:link> <br/><br/>
+                    <h:link value ="Third" outcome ="category">
+                        <f:param name ="category" value ="third"/>
+                    </h:link> <br/><br/>
+                    <h:link value ="Fourth" outcome ="category">
+                        <f:param name ="category" value ="fourth"/>
+                    </h:link> <br/><br/>
+                    <h:link value ="Fifth" outcome ="category">
+                        <f:param name ="category" value ="fifth"/>
+                    </h:link> <br/><br/>
+                    <h:link value ="Sixth" outcome ="category">
+                        <f:param name ="category" value ="sixth"/>
+                    </h:link> <br/><br/>
+                    <h:link value ="Seventh" outcome ="category">
+                        <f:param name ="category" value ="seventh"/>
+                    </h:link> <br/><br/>
+                </h:form>	
+            </div>
         </ui:composition>
     </body>
 </html>

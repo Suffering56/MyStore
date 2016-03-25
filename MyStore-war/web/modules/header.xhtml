@@ -8,9 +8,18 @@
     </head>
     <body>
         <ui:composition>
-            <div class="header">
-                header
-            </div>
+            <h:form>
+                <div class="header">
+                    <div class ="logo">
+                        <h:commandLink action="index">
+                            <h:graphicImage library = "images" name = "logo.png" height="70px" width="70px"/>
+                        </h:commandLink>
+                    </div>
+                    <div class ="header-text">
+                        header
+                    </div>
+                </div>
+            </h:form>
         </ui:composition>
     </body>
 </html>

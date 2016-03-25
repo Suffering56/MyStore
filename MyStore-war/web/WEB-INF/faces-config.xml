@@ -12,8 +12,13 @@
     
     <navigation-rule>   
         <navigation-case>
-            <from-outcome>catalog</from-outcome>
-            <to-view-id>/catalog.xhtml</to-view-id>
+            <from-outcome>index</from-outcome>
+            <to-view-id>/index.xhtml</to-view-id>
+            <redirect/>
+        </navigation-case> 
+        <navigation-case>
+            <from-outcome>category</from-outcome>
+            <to-view-id>/category.xhtml</to-view-id>
             <redirect/>
         </navigation-case>
     </navigation-rule>

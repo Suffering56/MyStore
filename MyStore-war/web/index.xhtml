@@ -10,7 +10,7 @@
     <body>
         <ui:composition template="/templates/main.xhtml">
 
-            <ui:define name="windowTitle">
+            <ui:define name="pageTitle">
                 #{pIndex.loginTitle}
             </ui:define>
 
@@ -25,33 +25,7 @@
             <ui:define name="content">
                 <f:view>
                     <h:form>
-                        <h1><h:outputText value="List"/></h1>
-                        <h:dataTable value="#{index.usersList}" var="item">
-                            <h:column>
-                                <f:facet name="header">
-                                    <h:outputText value="UserID"/>
-                                </f:facet>
-                                <h:outputText value="#{item.userID}"/>
-                            </h:column>
-                            <h:column>
-                                <f:facet name="header">
-                                    <h:outputText value="UserName"/>
-                                </f:facet>
-                                <h:outputText value="#{item.userName}"/>
-                            </h:column>
-                            <h:column>
-                                <f:facet name="header">
-                                    <h:outputText value="UserPass"/>
-                                </f:facet>
-                                <h:outputText value="#{item.userPass}"/>
-                            </h:column>
-                            <h:column>
-                                <f:facet name="header">
-                                    <h:outputText value="UserRole"/>
-                                </f:facet>
-                                <h:outputText value="#{item.userRole}"/>
-                            </h:column>
-                        </h:dataTable>
+                        <h1><h:outputText value="Index"/></h1>    
                     </h:form>
                 </f:view>
             </ui:define>

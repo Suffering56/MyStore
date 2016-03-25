@@ -37,7 +37,25 @@
     font-size: 1.4em;
     font-style: italic;
     font-family: Palatino;
+}
+
+.header-text {
+    position: relative;
     text-align: center;
+    top: -70px;
+}
+
+.logo {
+    position: relative;
+    top: -20px;
+    z-index: 100;
+}
+
+.sidebar {
+    font-size: 1.4em;
+    font-style: italic;
+    font-family: Palatino;
+    margin-left: 10px;
 }
 
 .planetImage {
